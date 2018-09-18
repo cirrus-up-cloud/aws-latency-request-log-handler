@@ -7,11 +7,13 @@ This library exposes a simple but very efficient AWS request handler that log in
 
 ### How to use it ###
 i. Declare the dependency in your _pom.xml_ file.
-```<dependency>
+```
+<dependency>
   <groupId>cloud.cirrusup</groupId>
   <artifactId>aws-latency-request-log-handler</artifactId>
   <version>1.0.0</version>
-</dependency>```
+</dependency>
+```
 
 ii. Create a _request handler_ object.
 
