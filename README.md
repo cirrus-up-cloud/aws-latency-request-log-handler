@@ -11,14 +11,16 @@ i. Declare the dependency in your _pom.xml_ file.
 <dependency>
   <groupId>cloud.cirrusup</groupId>
   <artifactId>aws-latency-request-log-handler</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
-
 ii. Create a _request handler_ object.
-
 ```java
 AwsLatencyRequestLogHandler handler = new AwsLatencyRequestLogHandler();
+```
+If you want to publish call details in JSON format, then declare the handler in the following manner:
+```java
+AwsLatencyRequestLogHandler handler = new AwsLatencyRequestLogHandler(new JSONPublisher());
 ```
 
 iii. Enhance the _AWS client_ with the request handler created above.
